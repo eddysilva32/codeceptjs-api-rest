@@ -1,11 +1,18 @@
-Feature('people');
+Feature('people').tag('@people');
 
-Scenario('people validation test',  ({ I }) => {
-    I.sendGetRequest('/people')
-    I.seeResponseCodeIsSuccessful()
+
+Scenario('verify api response', ({ I }) => {
+  I.sendGetRequest('https://swapi.dev/api/');
+  I.seeResponseCodeIs(200);
 });
 
-Scenario('people 1 validation test',  ({ I }) => {
+Scenario('verify people list information',  ({ I }) => {
+    I.sendGetRequest('/people')
+    I.seeResponseCodeIsSuccessful()
+    I.seeResponseContainsJson({ count: 82 });
+});
+
+Scenario('verify the first person on list',  ({ I }) => {
     I.sendGetRequest('/people/1')
     I.seeResponseContainsKeys(['name', 'height', 'gender'])
     I.seeResponseCodeIsSuccessful()
@@ -15,3 +22,5 @@ Scenario('people 1 validation test',  ({ I }) => {
         homeworld: "https://swapi.dev/api/planets/1/"
     })
 });
+
+

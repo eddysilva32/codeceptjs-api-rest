@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1678486842178' stop='1678486844147'>
+    <name>starships @starships:</name>
+    <title>starships @starships:</title>
+    <test-cases>
+        <test-case start='1678486842181' status='passed' stop='1678486844144'>
+            <name>verify starship Information</name>
+            <title>verify starship Information</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@starships'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678486842192' status='passed' stop='1678486844139'>
+                    <name>I send get request "/starships"</name>
+                    <title>I send get request "/starships"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678486844140' status='passed' stop='1678486844141'>
+                    <name>I see response code is 200</name>
+                    <title>I see response code is 200</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678486844141' status='passed' stop='1678486844143'>
+                    <name>I see response contains json {"count":36}</name>
+                    <title>I see response contains json {"count":36}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
