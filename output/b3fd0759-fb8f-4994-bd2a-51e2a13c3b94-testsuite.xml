@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1678487769191' stop='1678487770707'>
+    <name>films @films:</name>
+    <title>films @films:</title>
+    <test-cases>
+        <test-case start='1678487769193' status='passed' stop='1678487770704'>
+            <name>verify films list information</name>
+            <title>verify films list information</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@films'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678487769203' status='passed' stop='1678487770703'>
+                    <name>I send get request "/films"</name>
+                    <title>I send get request "/films"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678487770703' status='passed' stop='1678487770704'>
+                    <name>I see response code is successful 500</name>
+                    <title>I see response code is successful 500</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

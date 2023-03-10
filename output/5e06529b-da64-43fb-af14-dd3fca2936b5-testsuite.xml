@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1678486181214' stop='1678486183339'>
+    <name>planets @planets:</name>
+    <title>planets @planets:</title>
+    <test-cases>
+        <test-case start='1678486181217' status='passed' stop='1678486182549'>
+            <name>Verify Planet Information</name>
+            <title>Verify Planet Information</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@planets'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678486181230' status='passed' stop='1678486182542'>
+                    <name>I send get request "/planets"</name>
+                    <title>I send get request "/planets"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678486182544' status='passed' stop='1678486182545'>
+                    <name>I see response code is 200</name>
+                    <title>I see response code is 200</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678486182546' status='passed' stop='1678486182549'>
+                    <name>I see response contains json {"count":60}</name>
+                    <title>I see response contains json {"count":60}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1678486182554' status='passed' stop='1678486183332'>
+            <name>Verify Planet Information</name>
+            <title>Verify Planet Information</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@planets'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678486182557' status='passed' stop='1678486183330'>
+                    <name>I send get request "/planets/1"</name>
+                    <title>I send get request "/planets/1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678486183330' status='passed' stop='1678486183331'>
+                    <name>I see response code is 200</name>
+                    <title>I see response code is 200</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678486183331' status='passed' stop='1678486183332'>
+                    <name>I see response contains json {"name":"Tatooine"}</name>
+                    <title>I see response contains json {"name":"Tatooine"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
