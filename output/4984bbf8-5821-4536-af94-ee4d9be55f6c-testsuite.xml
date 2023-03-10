@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1678457080141' stop='1678457082131'>
+    <name>people:</name>
+    <title>people:</title>
+    <test-cases>
+        <test-case start='1678457080142' status='passed' stop='1678457081348'>
+            <name>people validation test</name>
+            <title>people validation test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678457080152' status='passed' stop='1678457081347'>
+                    <name>I send get request "/people"</name>
+                    <title>I send get request "/people"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678457081347' status='passed' stop='1678457081348'>
+                    <name>I see response code is successful </name>
+                    <title>I see response code is successful </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1678457081351' status='passed' stop='1678457082129'>
+            <name>people 1 validation test</name>
+            <title>people 1 validation test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678457081353' status='passed' stop='1678457082125'>
+                    <name>I send get request "/people/1"</name>
+                    <title>I send get request "/people/1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678457082125' status='passed' stop='1678457082126'>
+                    <name>I see response code is successful </name>
+                    <title>I see response code is successful </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678457082126' status='passed' stop='1678457082129'>
+                    <name>I see response contains json {"name":"Luke Skywalker","birth_year":"19BBY","homeworld":"https://swapi.dev/api/planets/1/"}</name>
+                    <title>I see response contains json {"name":"Luke Skywalker","birth_year":"19BBY","homeworld":"https://swapi.dev/api/planets/1/"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

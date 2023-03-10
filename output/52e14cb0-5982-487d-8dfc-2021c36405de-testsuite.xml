@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1678456872154' stop='1678456874220'>
+    <name>people:</name>
+    <title>people:</title>
+    <test-cases>
+        <test-case start='1678456872156' status='passed' stop='1678456873381'>
+            <name>people validation test</name>
+            <title>people validation test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678456872167' status='passed' stop='1678456873379'>
+                    <name>I send get request "/people"</name>
+                    <title>I send get request "/people"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678456873380' status='passed' stop='1678456873380'>
+                    <name>I see response code is successful </name>
+                    <title>I see response code is successful </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1678456873384' status='failed' stop='1678456874216'>
+            <name>people 1 validation test</name>
+            <title>people 1 validation test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678456873385' status='passed' stop='1678456874212'>
+                    <name>I send get request "/people/1"</name>
+                    <title>I send get request "/people/1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678456874212' status='passed' stop='1678456874212'>
+                    <name>I see response code is successful </name>
+                    <title>I see response code is successful </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678456874212' status='failed' stop='1678456874216'>
+                    <name>I see response contains json {"name":"Luke SkywalkerX"}</name>
+                    <title>I see response contains json {"name":"Luke SkywalkerX"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected { name: 'Luke Skywalker', …(15) } to deeply match { name: 'Luke SkywalkerX' }</message>
+                <stack-trace>AssertionError: expected { name: 'Luke Skywalker', …(15) } to deeply match { name: 'Luke SkywalkerX' }
+                    at JSONResponse.seeResponseContainsJson (C:\Users\digit\Downloads\automacao-codeceptjs-api\node_modules\codeceptjs\lib\helper\JSONResponse.js:199:42)
+                    at Step.run (C:\Users\digit\Downloads\automacao-codeceptjs-api\node_modules\codeceptjs\lib\step.js:122:47)
+                    at C:\Users\digit\Downloads\automacao-codeceptjs-api\node_modules\codeceptjs\lib\actor.js:135:23
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

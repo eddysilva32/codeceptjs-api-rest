@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1678454599793' stop='1678454603394'>
+    <name>people:</name>
+    <title>people:</title>
+    <test-cases>
+        <test-case start='1678454599795' status='passed' stop='1678454602299'>
+            <name>people validation test</name>
+            <title>people validation test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678454599805' status='passed' stop='1678454602297'>
+                    <name>I send get request "/people"</name>
+                    <title>I send get request "/people"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678454602297' status='passed' stop='1678454602299'>
+                    <name>I see response code is successful </name>
+                    <title>I see response code is successful </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1678454602302' status='failed' stop='1678454603390'>
+            <name>people validation test2</name>
+            <title>people validation test2</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678454602304' status='passed' stop='1678454603385'>
+                    <name>I send get request "/people3"</name>
+                    <title>I send get request "/people3"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678454603385' status='failed' stop='1678454603390'>
+                    <name>I see response code is successful 300</name>
+                    <title>I see response code is successful 300</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected 404 to be below 300</message>
+                <stack-trace>AssertionError: expected 404 to be below 300
+                    at JSONResponse.seeResponseCodeIsSuccessful (C:\Users\digit\Downloads\automacao-codeceptjs-api\node_modules\codeceptjs\lib\helper\JSONResponse.js:166:40)
+                    at Step.run (C:\Users\digit\Downloads\automacao-codeceptjs-api\node_modules\codeceptjs\lib\step.js:122:47)
+                    at C:\Users\digit\Downloads\automacao-codeceptjs-api\node_modules\codeceptjs\lib\actor.js:135:23
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

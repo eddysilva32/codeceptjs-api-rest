@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1678454885122' stop='1678454885143'>
+    <name>people:</name>
+    <title>people:</title>
+    <test-cases>
+        <test-case start='1678454885124' status='passed' stop='1678454885136'>
+            <name>people validation test</name>
+            <title>people validation test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678454885134' status='passed' stop='1678454885135'>
+                    <name>I send get request "/people"</name>
+                    <title>I send get request "/people"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678454885135' status='passed' stop='1678454885136'>
+                    <name>I see response code is successful </name>
+                    <title>I see response code is successful </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1678454885138' status='passed' stop='1678454885142'>
+            <name>people validation test2</name>
+            <title>people validation test2</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1678454885141' status='passed' stop='1678454885141'>
+                    <name>I send get request "/people3"</name>
+                    <title>I send get request "/people3"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1678454885141' status='passed' stop='1678454885142'>
+                    <name>I see response code is successful 300</name>
+                    <title>I see response code is successful 300</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
